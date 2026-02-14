@@ -24,9 +24,8 @@ function Counter({ end, suffix = "" }: { end: number; suffix?: string }) {
 }
 
 const stats = [
-  { value: 15, suffix: "+", label: "Years Experience" },
+  { value: 8, suffix: "+", label: "Years Experience" },
   { value: 10, suffix: "+", label: "Products Shipped" },
-  { value: 50, suffix: "+", label: "Teams Led" },
 ];
 
 export default function AboutSection() {
@@ -58,15 +57,16 @@ export default function AboutSection() {
             className="space-y-4 text-muted-foreground leading-relaxed"
           >
             <p>
-              I'm a product manager at AWS who's passionate about making AI and cloud
-              technology accessible to everyone. With over 15 years in tech, I've shipped
-              products used by millions, led cross-functional teams across continents, and
-              helped organizations navigate their cloud transformation journeys.
+              I started my career as a data engineer, building the pipelines and
+              infrastructure that power data-driven decisions. That foundation gave me
+              a deep technical fluency that I carried into Technical Program Management
+              and eventually Product Management — where I now shape products at AWS.
             </p>
             <p>
-              When I'm not deep in roadmaps or exploring the latest LLM breakthroughs,
-              you'll find me writing about AI on Medium, mentoring aspiring PMs, or
-              debating whether Chipotle's guac is worth the extra charge (it is).
+              With 8+ years in tech, I've shipped multiple products and features across
+              cloud and AI. When I'm not deep in roadmaps or exploring the latest LLM
+              breakthroughs, you'll find me writing about AI on Medium, mentoring aspiring
+              PMs, or debating whether Chipotle's guac is worth the extra charge (it is).
             </p>
           </motion.div>
         </div>
@@ -88,7 +88,7 @@ export default function AboutSection() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="grid grid-cols-3 gap-6 mt-16 max-w-lg"
+        className="grid grid-cols-2 gap-6 mt-16 max-w-sm"
       >
         {stats.map((stat) => (
           <div key={stat.label}>
