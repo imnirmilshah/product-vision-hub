@@ -3,35 +3,49 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     company: "Amazon Web Services",
-    role: "Product Manager",
-    period: "2022 – Present",
+    role: "Technical Product Manager",
+    period: "July 2024 – Present",
+    location: "Herndon, VA",
     current: true,
     bullets: [
-      "Driving product strategy for cloud and AI/ML services",
-      "Shipped multiple features improving developer experience across AWS",
-      "Bridging deep technical expertise with customer-centric product vision",
+      "Led cross-functional infrastructure delivery for enterprise customers, launching workloads 20 days ahead of schedule with 40% cost savings",
+      "Optimized Bedrock AI go-to-market, accelerating regional launch of Sonnet 3.5 and Nova for Lighthouse customers by 15 days",
+      "Architected automated Cloud Billing governance framework, accelerating high-revenue service launches by 33%",
+      "Pioneered AI document intelligence platform using LLMs, improving search precision by 35%",
     ],
   },
   {
-    company: "Previous Company",
-    role: "Technical Program Manager",
-    period: "2020 – 2022",
+    company: "Career Now Brands",
+    role: "Data Product Manager",
+    period: "Oct 2021 – July 2024",
+    location: "Royal Oak, MI",
     current: false,
     bullets: [
-      "Managed complex cross-functional programs spanning engineering and product",
-      "Drove execution of large-scale cloud migration initiatives",
-      "Transitioned from TPM to Product Management track",
+      "Designed scalable data products integrating Snowflake, Kafka, and BigQuery for real-time B2B ad decisioning",
+      "Delivered AI-enhanced attribution using GenAI models (LLaMA, Phi), increasing cross-channel precision by 19%",
+      "Reduced reporting ops costs by $100K through real-time dashboards and automated pipelines",
     ],
   },
   {
-    company: "Tech Company",
-    role: "Data Engineer → TPM",
-    period: "2017 – 2020",
+    company: "Career Now Brands",
+    role: "Data Engineer",
+    period: "Sep 2020 – Oct 2021",
+    location: "Royal Oak, MI",
     current: false,
     bullets: [
-      "Built and maintained data pipelines processing millions of records daily",
-      "Designed ETL architectures and data models for analytics platforms",
-      "Grew into program management, leading technical delivery end-to-end",
+      "Built ELT pipelines on Snowflake using Matillion, Airflow, Python; decreased CPU utilization by 30%",
+      "Implemented RAG pipelines and RLHF workflows to enhance model performance",
+    ],
+  },
+  {
+    company: "ACMEUNIVERSE i-TECH",
+    role: "Product Manager / Data Engineer",
+    period: "Jun 2016 – Jul 2018",
+    location: "Ahmedabad, India",
+    current: false,
+    bullets: [
+      "Led team of data analysts delivering market insights that increased revenue by 17%",
+      "Built data pipelines using Python, PySpark, Hadoop; conducted NLP extraction with TF-IDF vectorization",
     ],
   },
 ];
@@ -53,24 +67,22 @@ export default function ExperienceTimeline() {
         viewport={{ once: true }}
         className="font-display text-3xl md:text-4xl font-bold mb-12"
       >
-        Where I've made impact
+        Where I've Been
       </motion.h2>
 
       <div className="relative">
-        {/* Vertical line */}
         <div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-border" />
 
         <div className="space-y-8">
           {experiences.map((exp, i) => (
             <motion.div
-              key={exp.company}
+              key={`${exp.company}-${exp.role}`}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               className="relative pl-12 md:pl-16"
             >
-              {/* Dot */}
               <div className={`absolute left-2.5 md:left-4.5 top-2 w-3 h-3 rounded-full border-2 ${
                 exp.current ? "bg-primary border-primary" : "bg-background border-muted-foreground"
               }`} />
@@ -89,7 +101,7 @@ export default function ExperienceTimeline() {
                   )}
                 </div>
                 <p className="text-sm text-muted-foreground mb-1">{exp.role}</p>
-                <p className="text-xs font-mono text-muted-foreground mb-3">{exp.period}</p>
+                <p className="text-xs font-mono text-muted-foreground mb-3">{exp.period} · {exp.location}</p>
                 <ul className="space-y-1.5">
                   {exp.bullets.map((b, j) => (
                     <li key={j} className="text-sm text-muted-foreground flex gap-2">

@@ -6,7 +6,6 @@ import { Button } from "./ui/button";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Grid pattern */}
       <div className="absolute inset-0 grid-pattern opacity-40" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
 
@@ -15,16 +14,16 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-xs font-mono tracking-[0.3em] text-muted-foreground uppercase mb-6"
+          className="text-sm font-display font-medium tracking-[2px] text-muted-foreground uppercase mb-6"
         >
-          Product Manager · AWS · AI Enthusiast
+          Technical Product Manager · AWS · AI Enthusiast
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6"
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6"
         >
           Hi, I'm{" "}
           <span className="text-primary glow-cyan">Nirmil</span>
@@ -34,10 +33,10 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35 }}
-          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed font-body"
         >
-          I build products people love, demystify AI for everyone, and fuel my days with
-          Chipotle bowls and Taco Bell crunchwraps. Currently at AWS.
+          I build cloud infrastructure products at AWS and demystify AI in my free time.
+          My go-to fuel? Chipotle and Taco Bell.
         </motion.p>
 
         <motion.div

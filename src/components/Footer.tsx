@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <p className="font-display font-semibold mb-1">Nirmil<span className="text-primary">.</span></p>
-            <p className="text-xs text-muted-foreground">Built with curiosity · © {new Date().getFullYear()}</p>
+            <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} Nirmil. Built with curiosity.</p>
           </div>
 
           <div className="flex items-center gap-4">
@@ -23,7 +23,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <Button variant="outline" size="sm" className="gap-2">
+          <Button variant="outline" size="sm" className="gap-2 border-primary/50 text-primary hover:bg-primary/10">
             <Download className="w-3 h-3" />
             Download Resume
           </Button>
