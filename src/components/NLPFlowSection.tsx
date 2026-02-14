@@ -4,7 +4,7 @@ import { Progress } from "./ui/progress";
 import { Button } from "./ui/button";
 import { RotateCcw, Play, Edit3 } from "lucide-react";
 
-const DEFAULT_TEXT = "My name is Nirmil, I love Chipotle and Taco Bell, and I'm passionate about demystifying AI for product managers.";
+const DEFAULT_TEXT = "My name is Nirmil, I started as a data engineer, now I'm a Product Manager at AWS, and I love Chipotle and demystifying AI.";
 
 const STAGES = [
   { num: 1, title: "Raw Text Input", desc: "The raw text enters the pipeline — every NLP journey starts with words." },
