@@ -24,8 +24,9 @@ function Counter({ end, suffix = "" }: { end: number; suffix?: string }) {
 }
 
 const stats = [
-  { value: 8, suffix: "+", label: "Years Experience" },
+  { value: 8, suffix: "+", label: "Years in Product & Data" },
   { value: 10, suffix: "+", label: "Products Shipped" },
+  { value: 3, suffix: "", label: "Master's & Bachelor's Degrees" },
 ];
 
 export default function AboutSection() {
@@ -39,7 +40,7 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="text-xs font-mono tracking-[0.25em] text-primary uppercase mb-3"
           >
-            About Me
+            About
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -60,7 +61,8 @@ export default function AboutSection() {
               I started my career as a data engineer, building the pipelines and
               infrastructure that power data-driven decisions. That foundation gave me
               a deep technical fluency that I carried into Technical Program Management
-              and eventually Product Management — where I now shape products at AWS.
+              and eventually Product Management — where I now shape cloud infrastructure
+              products at AWS.
             </p>
             <p>
               With 8+ years in tech, I've shipped multiple products and features across
@@ -75,7 +77,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="lg:col-span-2 rounded-2xl bg-card border border-border aspect-square flex items-center justify-center"
+          className="lg:col-span-2 rounded-2xl bg-card border border-border aspect-square flex items-center justify-center glow-box-cyan"
         >
           <div className="text-center text-muted-foreground">
             <div className="w-24 h-24 mx-auto rounded-full bg-secondary mb-4" />
@@ -88,7 +90,7 @@ export default function AboutSection() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="grid grid-cols-2 gap-6 mt-16 max-w-sm"
+        className="grid grid-cols-3 gap-6 mt-16 max-w-lg"
       >
         {stats.map((stat) => (
           <div key={stat.label}>

@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
-import { Briefcase, Code, Brain } from "lucide-react";
+import { Layout, Terminal, Brain } from "lucide-react";
 
 const skillGroups = [
   {
-    icon: Briefcase,
+    icon: Layout,
     title: "Product Management",
     color: "cyan",
-    skills: ["Roadmap Strategy", "User Research", "A/B Testing", "OKRs & KPIs", "Stakeholder Mgmt", "Go-to-Market", "Agile / Scrum", "Data-Driven Decisions"],
+    skills: ["Roadmapping", "Cross-Functional Leadership", "Go-to-Market Strategy", "OKRs & KPIs", "Agile/Scrum", "Stakeholder Alignment", "A/B Testing", "Product Launch Readiness"],
   },
   {
-    icon: Code,
+    icon: Terminal,
     title: "Technical",
     color: "green",
-    skills: ["AWS", "Python", "TypeScript", "System Design", "APIs & Microservices", "CI/CD", "SQL", "Cloud Architecture"],
+    skills: ["AWS (Bedrock, SageMaker, Lambda, S3, DynamoDB)", "Snowflake", "BigQuery", "Kafka", "Python", "SQL", "Terraform", "API Design", "System Architecture"],
   },
   {
     icon: Brain,
     title: "AI / ML",
     color: "purple",
-    skills: ["LLMs & GPT", "Prompt Engineering", "RAG Pipelines", "Vector Databases", "NLP", "Computer Vision", "ML Ops", "Responsible AI"],
+    skills: ["LLM Architecture", "Prompt Engineering", "RAG Pipelines", "AI Agents", "RLHF", "Embeddings & Vector DBs", "GenAI (Claude, LLaMA)", "NLP/TF-IDF", "Multi-Modal AI"],
   },
 ];
 
@@ -43,7 +43,7 @@ export default function SkillsSection() {
         viewport={{ once: true }}
         className="text-xs font-mono tracking-[0.25em] text-primary uppercase mb-3"
       >
-        Skills & Expertise
+        Expertise
       </motion.p>
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export default function SkillsSection() {
         viewport={{ once: true }}
         className="font-display text-3xl md:text-4xl font-bold mb-12"
       >
-        What I bring to the table
+        What I Bring to the Table
       </motion.h2>
 
       <div className="grid md:grid-cols-3 gap-6">
