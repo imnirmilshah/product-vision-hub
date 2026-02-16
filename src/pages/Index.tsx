@@ -5,7 +5,7 @@ import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
 import ExperienceTimeline from "@/components/ExperienceTimeline";
 import EducationSection from "@/components/EducationSection";
-import NLPFlowSection from "@/components/NLPFlowSection";
+import RAGPipelineSection from "@/components/RAGPipelineSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import Footer from "@/components/Footer";
 
@@ -20,7 +20,7 @@ const Index = () => {
         <SkillsSection />
         <ExperienceTimeline />
         <EducationSection />
-        <NLPFlowSection />
+        <RAGPipelineSection />
         <ProjectsSection />
       </main>
       <Footer />
