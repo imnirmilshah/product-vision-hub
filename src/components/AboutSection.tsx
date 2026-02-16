@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
+import nirmilPhoto from "@/assets/nirmil-photo.png";
 
 function Counter({ end, suffix = "" }: { end: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -79,10 +80,11 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="lg:col-span-2 rounded-2xl bg-card border border-border aspect-square flex items-center justify-center glow-box-cyan"
         >
-          <div className="text-center text-muted-foreground">
-            <div className="w-24 h-24 mx-auto rounded-full bg-secondary mb-4" />
-            <p className="text-sm">Photo</p>
-          </div>
+          <img
+            src={nirmilPhoto}
+            alt="Nirmil Shah — Technical Product Manager at AWS"
+            className="w-full h-full object-cover rounded-2xl"
+          />
         </motion.div>
       </div>
 
