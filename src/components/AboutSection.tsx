@@ -34,7 +34,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="container mx-auto px-4 py-24">
       <div className="grid lg:grid-cols-5 gap-12 items-start">
-        <div className="lg:col-span-3">
+        <div className="lg:col-span-4">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -43,14 +43,32 @@ export default function AboutSection() {
           >
             About
           </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="font-display text-3xl md:text-4xl font-bold mb-6"
-          >
-            Product thinker. AI demystifier. Builder.
-          </motion.h2>
+
+          <div className="flex items-start gap-6 mb-6">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="shrink-0"
+            >
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-primary/30 glow-box-cyan">
+                <img
+                  src={nirmilPhoto}
+                  alt="Nirmil Shah — Technical Product Manager at AWS"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </motion.div>
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="font-display text-3xl md:text-4xl font-bold pt-2"
+            >
+              Product thinker. AI demystifier. Builder.
+            </motion.h2>
+          </div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -73,19 +91,6 @@ export default function AboutSection() {
             </p>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="lg:col-span-2 rounded-2xl bg-card border border-border aspect-square flex items-center justify-center glow-box-cyan"
-        >
-          <img
-            src={nirmilPhoto}
-            alt="Nirmil Shah — Technical Product Manager at AWS"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-        </motion.div>
       </div>
 
       <motion.div
