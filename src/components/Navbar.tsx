@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Moon, Sun, Menu, X, Github, Linkedin } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 import { motion, AnimatePresence } from "framer-motion";
+import nirmilPhoto from "@/assets/nirmil-photo.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -35,7 +36,8 @@ export default function Navbar() {
         }`}
       >
         <div className="container mx-auto flex items-center justify-between h-16 px-4">
-          <Link to="/" className="font-display text-xl font-bold tracking-tight flex items-center gap-0.5">
+          <Link to="/" className="font-display text-xl font-bold tracking-tight flex items-center gap-2">
+            <img src={nirmilPhoto} alt="Nirmil" className="w-8 h-8 rounded-full ring-2 ring-primary object-cover" />
             Nirmil<span className="text-primary">.</span>
           </Link>
 
@@ -89,10 +91,16 @@ export default function Navbar() {
             className="fixed inset-0 z-[60] bg-background flex flex-col"
           >
             <div className="flex items-center justify-between h-16 px-4">
-              <span className="font-display text-xl font-bold">Nirmil<span className="text-primary">.</span></span>
+              <span className="font-display text-xl font-bold flex items-center gap-2">
+                <img src={nirmilPhoto} alt="Nirmil" className="w-8 h-8 rounded-full ring-2 ring-primary object-cover" />
+                Nirmil<span className="text-primary">.</span>
+              </span>
               <button onClick={() => setMobileOpen(false)} className="p-2" aria-label="Close menu">
                 <X className="w-5 h-5" />
               </button>
+            </div>
+            <div className="mt-4 flex justify-center">
+              <img src={nirmilPhoto} alt="Nirmil" className="w-20 h-20 rounded-full ring-2 ring-primary object-cover" />
             </div>
             <div className="flex-1 flex flex-col items-center justify-center gap-6">
               {navLinks.map((link, i) => (

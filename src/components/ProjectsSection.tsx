@@ -5,47 +5,41 @@ import { Badge } from "./ui/badge";
 
 const projects = [
   {
-    title: "AI-Powered Product Recommender",
-    description: "ML pipeline for personalized recommendations across 10M+ users.",
-    tags: ["Python", "AWS SageMaker", "React"],
+    title: "AWS Pricing Pages & Calculator",
+    description: "Automated manual pricing workflow with review checkpoint for enterprise AWS services.",
+    tags: ["AWS", "Automation", "Product Management"],
+    featured: true,
+    featuredLabel: "AWS",
     detail: {
-      problem: "Users were seeing irrelevant product suggestions, leading to low conversion rates.",
-      approach: "Built a collaborative filtering pipeline with real-time feature store on AWS SageMaker.",
-      impact: "Increased conversion by 28% and average order value by 15%.",
-      stack: ["Python", "SageMaker", "DynamoDB", "React", "Lambda"],
+      problem: "Pricing page updates for AWS services required a 63-day manual process involving multiple teams, spreadsheets, and email chains — slowing time-to-market for new service launches.",
+      approach: "Designed and shipped an automated pricing workflow with built-in review checkpoints, enabling self-service publishing while maintaining compliance and approval gates.",
+      impact: "Eliminated 63 days of manual work per pricing update cycle, accelerating service launch timelines and freeing cross-functional teams for higher-leverage work.",
+      stack: ["AWS Internal Tools", "Workflow Automation", "Product Strategy", "Stakeholder Alignment"],
     },
   },
   {
-    title: "Cloud Cost Optimizer Dashboard",
-    description: "Real-time cost visibility and anomaly detection for enterprise AWS accounts.",
-    tags: ["TypeScript", "AWS", "D3.js"],
+    title: "B2C Conversion Optimization",
+    description: "Redesigned funnels + CTA microcopy for 6M+ monthly users across job search platforms.",
+    tags: ["A/B Testing", "UX", "Growth"],
+    featured: false,
     detail: {
-      problem: "Enterprise clients couldn't track or predict cloud spend across 50+ accounts.",
-      approach: "Built a real-time dashboard with anomaly detection using CloudWatch metrics and D3.js visualizations.",
-      impact: "Saved clients avg $2M annually in cloud costs.",
-      stack: ["TypeScript", "Lambda", "CloudWatch", "D3.js", "DynamoDB"],
+      problem: "Conversion funnels across multiple B2C job platforms were underperforming — generic CTAs like 'Submit' created friction and failed to communicate value to 6M+ monthly users.",
+      approach: "Ran systematic A/B tests across funnels, redesigning CTAs with intent-driven microcopy (e.g., 'Submit' → 'Find Your Home') and optimizing multi-step flows for clarity and urgency.",
+      impact: "Achieved a 19% conversion lift across optimized funnels, directly increasing qualified lead volume and downstream revenue.",
+      stack: ["A/B Testing", "Google Optimize", "Analytics", "UX Research", "Funnel Design"],
     },
   },
   {
-    title: "NLP Document Processor",
-    description: "Automated document understanding pipeline for legal contracts.",
-    tags: ["NLP", "Python", "Textract"],
+    title: "AI Document Intelligence Platform",
+    description: "Unified documents + AI search + self-service portal for vendors, contractors, and internal teams.",
+    tags: ["AI", "LLM", "AWS Bedrock", "Search"],
+    featured: true,
+    featuredLabel: "AI",
     detail: {
-      problem: "Legal teams spent 40+ hours/week manually reviewing contracts.",
-      approach: "Combined AWS Textract with custom NLP models for entity extraction and clause classification.",
-      impact: "Reduced review time by 75%, processing 500+ contracts/day.",
-      stack: ["Python", "Textract", "Comprehend", "Step Functions", "React"],
-    },
-  },
-  {
-    title: "Developer Onboarding Platform",
-    description: "Interactive learning platform reducing new-hire ramp-up time.",
-    tags: ["React", "Node.js", "GraphQL"],
-    detail: {
-      problem: "New developers took 3+ months to become productive.",
-      approach: "Built a gamified learning platform with guided tutorials, sandboxed environments, and progress tracking.",
-      impact: "Cut onboarding time from 12 weeks to 4 weeks.",
-      stack: ["React", "Node.js", "GraphQL", "PostgreSQL", "Docker"],
+      problem: "Over 600K documents were scattered across siloed systems with no unified search — vendors, contractors, and internal teams couldn't find what they needed without manual requests.",
+      approach: "Built an AI-powered document intelligence platform using LLMs for semantic search, automated categorization, and a self-service portal with role-based access for all stakeholder groups.",
+      impact: "Serves 600K+ documents with AI-powered search, reducing document retrieval time by 35% and eliminating manual request workflows for three distinct user groups.",
+      stack: ["Amazon Bedrock", "LLM", "Vector Search", "React", "AWS Lambda", "S3"],
     },
   },
 ];
@@ -81,9 +75,17 @@ export default function ProjectsSection() {
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
             onClick={() => setSelected(i)}
-            className="text-left bg-card border border-border rounded-2xl p-6 hover:border-primary/30 transition-all group"
+            className={`text-left rounded-2xl p-6 transition-all group border ${
+              project.featured
+                ? "bg-card border-primary/40 shadow-lg shadow-primary/5 md:col-span-1"
+                : "bg-card border-border hover:border-primary/30"
+            }`}
           >
-            <div className="w-full h-32 bg-secondary/50 rounded-lg mb-4" />
+            <div className="flex items-center gap-2 mb-3">
+              {project.featured && project.featuredLabel && (
+                <Badge className="text-[10px] bg-primary/15 text-primary border-primary/30">{project.featuredLabel}</Badge>
+              )}
+            </div>
             <h3 className="font-display font-semibold mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
             <p className="text-sm text-muted-foreground mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2">
