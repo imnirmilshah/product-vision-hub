@@ -1,26 +1,19 @@
 import { useState, useMemo } from "react";
-import { useQuery } from "@tanstack/react-query";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BlogCard from "@/components/blog/BlogCard";
-import BlogCardSkeleton from "@/components/blog/BlogCardSkeleton";
 import CategoryFilter from "@/components/blog/CategoryFilter";
-import { fetchAllPosts } from "@/lib/contentful";
+import { getAllPosts } from "@/data/blogPosts";
 
 export default function BlogLanding() {
   const [activeCategory, setActiveCategory] = useState("All");
-
-  const { data: posts, isLoading } = useQuery({
-    queryKey: ["blog-posts"],
-    queryFn: fetchAllPosts,
-  });
+  const posts = getAllPosts();
 
   const filtered = useMemo(() => {
-    if (!posts) return [];
     if (activeCategory === "All") return posts;
-    return posts.filter((p) => String(p.fields.category) === activeCategory);
+    return posts.filter((p) => p.category === activeCategory);
   }, [posts, activeCategory]);
 
   return (
@@ -57,21 +50,19 @@ export default function BlogLanding() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {isLoading
-              ? Array.from({ length: 4 }).map((_, i) => <BlogCardSkeleton key={i} />)
-              : filtered.map((post, i) => (
-                  <motion.div
-                    key={post.sys.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.05, duration: 0.4 }}
-                  >
-                    <BlogCard post={post} />
-                  </motion.div>
-                ))}
+            {filtered.map((post, i) => (
+              <motion.div
+                key={post.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.05, duration: 0.4 }}
+              >
+                <BlogCard post={post} />
+              </motion.div>
+            ))}
           </div>
 
-          {!isLoading && filtered.length === 0 && (
+          {filtered.length === 0 && (
             <p className="text-center text-muted-foreground mt-16">No posts in this category yet.</p>
           )}
         </div>
