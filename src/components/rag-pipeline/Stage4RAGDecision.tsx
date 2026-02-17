@@ -52,7 +52,7 @@ export default function Stage4RAGDecision() {
       </div>
 
       <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
-        Without retrieval, LLMs rely solely on training data — which may be outdated, incomplete, or wrong. RAG injects real, sourced data into the LLM's context BEFORE it generates. This is why Amazon Bedrock Knowledge Bases, LangChain, and LlamaIndex exist.
+        Without retrieval, LLMs rely solely on training data, which may be outdated, incomplete, or wrong. RAG injects real, sourced data into the LLM's context BEFORE it generates. This is why Amazon Bedrock Knowledge Bases, LangChain, and LlamaIndex exist.
       </p>
     </div>
   );

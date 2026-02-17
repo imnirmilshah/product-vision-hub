@@ -51,7 +51,7 @@ export default function Stage3Embedding() {
       </div>
 
       <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
-        The embedding model converts your entire question into a single 1536-dimensional vector. This vector captures the MEANING — pricing, subscription, churn, causation. It will be used to search for relevant knowledge next.
+        The embedding model converts your entire question into a single 1536-dimensional vector. This vector captures the MEANING: pricing, subscription, churn, causation. It will be used to search for relevant knowledge next.
       </p>
     </div>
   );

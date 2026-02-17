@@ -17,8 +17,8 @@ const education = [
 ];
 
 const certifications = [
-  "Certified Scrum Master (CSM) — 2023",
-  "Certified Scrum Product Owner (CSPO) — 2023",
+  "Certified Scrum Master (CSM), 2023",
+  "Certified Scrum Product Owner (CSPO), 2023",
 ];
 
 export default function EducationSection() {

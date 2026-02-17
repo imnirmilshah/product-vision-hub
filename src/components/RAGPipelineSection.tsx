@@ -112,7 +112,7 @@ export default function RAGPipelineSection() {
         viewport={{ once: true }}
         className="text-muted-foreground mb-2 max-w-3xl"
       >
-        A live, step-by-step walkthrough of the full RAG pipeline — from a single question to a sourced, reasoned analysis.
+        A live, step-by-step walkthrough of the full RAG pipeline: from a single question to a sourced, reasoned analysis.
       </motion.p>
       <motion.p
         initial={{ opacity: 0 }}
@@ -120,7 +120,7 @@ export default function RAGPipelineSection() {
         viewport={{ once: true }}
         className="text-xs text-muted-foreground mb-8 max-w-3xl"
       >
-        This is not a simplified metaphor. This is how modern LLMs actually work — from Amazon Bedrock to Claude to GPT-4. Each step below maps to real infrastructure you can deploy today.
+        This is not a simplified metaphor. This is how modern LLMs actually work, from Amazon Bedrock to Claude to GPT-4. Each step below maps to real infrastructure you can deploy today.
       </motion.p>
 
       {/* Progress bar */}

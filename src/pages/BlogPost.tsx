@@ -222,7 +222,7 @@ export default function BlogPost() {
   return (
     <>
       <Helmet>
-        <title>{post.title} — Nirmil</title>
+        <title>{post.title} | Nirmil</title>
         <meta name="description" content={post.excerpt} />
       </Helmet>
       <Navbar />

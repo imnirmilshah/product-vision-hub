@@ -70,8 +70,8 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact — Nirmil</title>
-        <meta name="description" content="Get in touch with Nirmil — Technical Product Manager at AWS. Open to opportunities, collaborations, and conversations about AI and product." />
+        <title>Contact | Nirmil</title>
+        <meta name="description" content="Get in touch with Nirmil, Technical Product Manager at AWS. Open to opportunities, collaborations, and conversations about AI and product." />
       </Helmet>
       <Navbar />
       <main className="min-h-screen pt-24 pb-16">

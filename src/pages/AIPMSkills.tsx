@@ -11,7 +11,7 @@ const whyCards = [
   {
     icon: Zap,
     title: "The Shifting Landscape",
-    body: "AI is compressing product development cycles from months to weeks. PMs who leverage AI tools ship faster, write better specs, and make data-driven decisions with less manual research. The role isn't being replaced — it's being amplified.",
+    body: "AI is compressing product development cycles from months to weeks. PMs who leverage AI tools ship faster, write better specs, and make data-driven decisions with less manual research. The role isn't being replaced. It's being amplified.",
   },
   {
     icon: Wrench,
@@ -21,7 +21,7 @@ const whyCards = [
   {
     icon: Building,
     title: "Real Talk: How I Use AI at AWS",
-    body: "At AWS, I use Claude daily — drafting PRDs, analyzing competitive landscapes, synthesizing stakeholder feedback, and even debugging technical specs. This isn't theoretical. These are workflows I run every week.",
+    body: "At AWS, I use Claude daily: drafting PRDs, analyzing competitive landscapes, synthesizing stakeholder feedback, and even debugging technical specs. This isn't theoretical. These are workflows I run every week.",
   },
 ];
 
@@ -36,7 +36,7 @@ export default function AIPMSkills() {
   return (
     <>
       <Helmet>
-        <title>AI PM Skills — Nirmil</title>
+        <title>AI PM Skills | Nirmil</title>
         <meta name="description" content="A practical guide to using Claude AI for product management: setup, claude.md, PRD creation, and advanced PM workflows." />
       </Helmet>
 
@@ -50,7 +50,7 @@ export default function AIPMSkills() {
               AI-Powered Product Management
             </motion.h1>
             <motion.p {...fadeUp} transition={{ delay: 0.1, duration: 0.5 }} className="font-display text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
-              How Claude AI transforms the PM workflow — a practical, hands-on guide
+              How Claude AI transforms the PM workflow: a practical, hands-on guide
             </motion.p>
             <motion.p {...fadeUp} transition={{ delay: 0.2, duration: 0.5 }} className="text-sm text-muted-foreground font-display">
               By Nirmil · Technical PM at AWS

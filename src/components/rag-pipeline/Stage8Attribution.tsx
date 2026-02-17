@@ -53,7 +53,7 @@ export default function Stage8Attribution() {
       </motion.div>
 
       <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
-        Production RAG systems don't just answer — they show their work. Every claim traces to a source. Source attribution builds trust, enables fact-checking, and satisfies compliance.
+        Production RAG systems don't just answer. They show their work. Every claim traces to a source. Source attribution builds trust, enables fact-checking, and satisfies compliance.
       </p>
     </div>
   );

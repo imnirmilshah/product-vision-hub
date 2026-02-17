@@ -5,7 +5,7 @@ const SECTIONS = [
   {
     title: "Why Prices Went Up",
     border: "hsl(var(--orange))",
-    text: "Spotify raised US Premium to $12.99/month in 2025 — the third increase in three years after a decade at $9.99. The driver is structural: royalty payouts consume 65% of revenue and grew 15% YoY. At 31.1% gross margin, Spotify approaches profitability — but only if pricing keeps pace with costs.",
+    text: "Spotify raised US Premium to $12.99/month in 2025, the third increase in three years after a decade at $9.99. The driver is structural: royalty payouts consume 65% of revenue and grew 15% YoY. At 31.1% gross margin, Spotify approaches profitability, but only if pricing keeps pace with costs.",
   },
   {
     title: "Why Churn Won't Spike",
@@ -15,12 +15,12 @@ const SECTIONS = [
   {
     title: "The Competitive Lock",
     border: "hsl(265 70% 70%)",
-    text: "Spotify holds 40% of global streaming. No competitor matches its personalization. Discover Weekly, AI DJ, and daylist create a taste profile that compounds with every listen — a data moat. Switching means starting music intelligence from zero.",
+    text: "Spotify holds 40% of global streaming. No competitor matches its personalization. Discover Weekly, AI DJ, and daylist create a taste profile that compounds with every listen, a data moat. Switching means starting music intelligence from zero.",
   },
   {
     title: "The PM Takeaway",
     border: "hsl(var(--cyan))",
-    text: "Pricing power isn't extracted — it's earned. Spotify built switching costs and deepened engagement for a decade before exercising leverage. Build the moat first. Then raise the drawbridge.",
+    text: "Pricing power isn't extracted, it's earned. Spotify built switching costs and deepened engagement for a decade before exercising leverage. Build the moat first. Then raise the drawbridge.",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function Stage7Inference() {
       </div>
 
       <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
-        The transformer generated this token-by-token — each new word conditioned on the full context window. It REASONED over injected context in real-time, connecting pricing to costs, churn stability to product lock-in, and engagement to competitive moats.
+        The transformer generated this token-by-token. Each new word conditioned on the full context window. It REASONED over injected context in real-time, connecting pricing to costs, churn stability to product lock-in, and engagement to competitive moats.
       </p>
     </div>
   );

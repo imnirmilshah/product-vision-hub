@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { TOKENS, TOKEN_COLORS } from "./types";
 
 const callouts: Record<number, string> = {
-  0: 'Even "Spotify" splits into subwords — the tokenizer learned these fragments during training',
-  6: "Numbers are individual tokens — processed as symbols, not quantities",
-  18: "This single token carries heavy semantic weight — it drives what gets retrieved",
+  0: 'Even "Spotify" splits into subwords. The tokenizer learned these fragments during training',
+  6: "Numbers are individual tokens, processed as symbols, not quantities",
+  18: "This single token carries heavy semantic weight. It drives what gets retrieved",
 };
 
 export default function Stage2Tokenization() {
@@ -46,7 +46,7 @@ export default function Stage2Tokenization() {
         ))}
       </div>
       <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
-        LLMs don't read words — they read tokens. Byte-Pair Encoding breaks text into subword units. This 20-word question becomes {TOKENS.length} tokens. Claude and GPT-4 each have ~100K token vocabularies.
+        LLMs don't read words. They read tokens. Byte-Pair Encoding breaks text into subword units. This 20-word question becomes {TOKENS.length} tokens. Claude and GPT-4 each have ~100K token vocabularies.
       </p>
     </div>
   );

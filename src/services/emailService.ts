@@ -7,7 +7,7 @@
 
 import emailjs from '@emailjs/browser';
 
-// These are publishable client-side keys — safe to store in code.
+// These are publishable client-side keys, safe to store in code.
 // Replace these placeholder values with your actual EmailJS credentials.
 const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
 const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';

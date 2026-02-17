@@ -33,7 +33,7 @@ export default function LLMFundamentals() {
   return (
     <>
       <Helmet>
-        <title>LLM Fundamentals — Nirmil</title>
+        <title>LLM Fundamentals | Nirmil</title>
         <meta name="description" content="Interactive guide to LLM architecture, RAG pipelines, transformers, AI agents, and how they work together. Built by a PM at AWS." />
       </Helmet>
       <Navbar />
@@ -54,7 +54,7 @@ export default function LLMFundamentals() {
               transition={{ delay: 0.15 }}
               className="font-display text-lg md:text-xl text-muted-foreground max-w-2xl"
             >
-              From transformers to AI agents — the technical foundations every PM needs
+              From transformers to AI agents: the technical foundations every PM needs
             </motion.p>
           </div>
         </section>
@@ -62,9 +62,9 @@ export default function LLMFundamentals() {
         {/* ─── Section 1: Transformer Architecture ─── */}
         <section className="container mx-auto px-4 py-20">
           <SectionLabel>Architecture</SectionLabel>
-          <SectionHeading>The Transformer — The Engine Behind Every LLM</SectionHeading>
+          <SectionHeading>The Transformer: The Engine Behind Every LLM</SectionHeading>
           <p className="text-sm text-muted-foreground mb-8 max-w-2xl">
-            Every modern LLM — GPT-4, Claude, Gemini, Llama — is built on the transformer architecture. Toggle between simple and technical explanations.
+            Every modern LLM (GPT-4, Claude, Gemini, Llama) is built on the transformer architecture. Toggle between simple and technical explanations.
           </p>
           <TransformerDiagram />
         </section>
@@ -79,7 +79,7 @@ export default function LLMFundamentals() {
           <SectionLabel>AI Agents</SectionLabel>
           <SectionHeading>From LLMs to Autonomous Agents</SectionHeading>
           <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
-            LLMs are the brain. Agents add perception, planning, action, and memory — turning a text generator into an autonomous system.
+            LLMs are the brain. Agents add perception, planning, action, and memory, turning a text generator into an autonomous system.
           </p>
           <AgentsSection />
         </section>

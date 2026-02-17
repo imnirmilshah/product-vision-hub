@@ -67,7 +67,7 @@ export default function AboutSection() {
               I started my career as a data engineer, building the pipelines and
               infrastructure that power data-driven decisions. That foundation gave me
               a deep technical fluency that I carried into Technical Program Management
-              and eventually Product Management — where I now shape cloud infrastructure
+              and eventually Product Management, where I now shape cloud infrastructure
               products at AWS.
             </p>
             <p>
