@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import nirmilPhoto from "@/assets/nirmil-photo.png";
+
 
 function Counter({ end, suffix = "" }: { end: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -45,20 +45,7 @@ export default function AboutSection() {
           </motion.p>
 
           <div className="flex items-start gap-6 mb-6">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="shrink-0"
-            >
-              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-primary/30 glow-box-cyan">
-                <img
-                  src={nirmilPhoto}
-                  alt="Nirmil Shah — Technical Product Manager at AWS"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </motion.div>
+            
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
