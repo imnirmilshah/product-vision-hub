@@ -12,17 +12,9 @@ import BlogPost from "./pages/BlogPost";
 import AIPMSkills from "./pages/AIPMSkills";
 import LLMFundamentals from "./pages/LLMFundamentals";
 import CloudRevolution from "./pages/CloudRevolution";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
-
-const PlaceholderPage = ({ title }: { title: string }) => (
-  <div className="min-h-screen flex items-center justify-center">
-    <div className="text-center">
-      <h1 className="font-display text-4xl font-bold mb-4">{title}</h1>
-      <p className="text-muted-foreground">Coming soon.</p>
-    </div>
-  </div>
-);
 
 const App = () => (
   <HelmetProvider>
@@ -39,7 +31,7 @@ const App = () => (
               <Route path="/ai-pm-skills" element={<AIPMSkills />} />
               <Route path="/llm-fundamentals" element={<LLMFundamentals />} />
               <Route path="/cloud-revolution" element={<CloudRevolution />} />
-              <Route path="/contact" element={<PlaceholderPage title="Contact" />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
