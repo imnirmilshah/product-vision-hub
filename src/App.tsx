@@ -3,9 +3,12 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import BlogLanding from "./pages/BlogLanding";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -19,25 +22,28 @@ const PlaceholderPage = ({ title }: { title: string }) => (
 );
 
 const App = () => (
-  <ThemeProvider>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/blog" element={<PlaceholderPage title="Blog" />} />
-            <Route path="/ai-pm-skills" element={<PlaceholderPage title="AI PM Skills" />} />
-            <Route path="/llm-fundamentals" element={<PlaceholderPage title="LLM Fundamentals" />} />
-            <Route path="/cloud-revolution" element={<PlaceholderPage title="Cloud Revolution" />} />
-            <Route path="/contact" element={<PlaceholderPage title="Contact" />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
-  </ThemeProvider>
+  <HelmetProvider>
+    <ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/blog" element={<BlogLanding />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/ai-pm-skills" element={<PlaceholderPage title="AI PM Skills" />} />
+              <Route path="/llm-fundamentals" element={<PlaceholderPage title="LLM Fundamentals" />} />
+              <Route path="/cloud-revolution" element={<PlaceholderPage title="Cloud Revolution" />} />
+              <Route path="/contact" element={<PlaceholderPage title="Contact" />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </ThemeProvider>
+  </HelmetProvider>
 );
 
 export default App;
