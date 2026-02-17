@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import BlogLanding from "./pages/BlogLanding";
 import BlogPost from "./pages/BlogPost";
+import AIPMSkills from "./pages/AIPMSkills";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +34,7 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/blog" element={<BlogLanding />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
-              <Route path="/ai-pm-skills" element={<PlaceholderPage title="AI PM Skills" />} />
+              <Route path="/ai-pm-skills" element={<AIPMSkills />} />
               <Route path="/llm-fundamentals" element={<PlaceholderPage title="LLM Fundamentals" />} />
               <Route path="/cloud-revolution" element={<PlaceholderPage title="Cloud Revolution" />} />
               <Route path="/contact" element={<PlaceholderPage title="Contact" />} />
