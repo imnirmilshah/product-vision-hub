@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
-import nirmilPhoto from "@/assets/nirmil-photo.png";
+
 
 export default function HeroSection() {
   return (
@@ -21,21 +21,11 @@ export default function HeroSection() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.15 }}
-          className="mb-6 flex justify-center md:hidden"
-        >
-          <img src={nirmilPhoto} alt="Nirmil" className="w-[120px] h-[120px] rounded-full ring-4 ring-primary glow-box-cyan object-cover" />
-        </motion.div>
-
-        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className="font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 flex items-center justify-center gap-6"
         >
-          <img src={nirmilPhoto} alt="Nirmil" className="hidden md:block w-[120px] h-[120px] rounded-full ring-4 ring-primary glow-box-cyan object-cover" />
           <h1>
             Hi, I'm{" "}
             <span className="text-primary glow-cyan">Nirmil</span>

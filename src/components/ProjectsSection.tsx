@@ -42,6 +42,19 @@ const projects = [
       stack: ["Amazon Bedrock", "LLM", "Vector Search", "React", "AWS Lambda", "S3"],
     },
   },
+  {
+    title: "Amazon Bedrock Regional GTM",
+    description: "Decoupled non-essential dependencies from launch-critical path, mitigating integration risks 2 weeks early.",
+    tags: ["AI/ML", "AWS Bedrock", "GTM", "Program Management"],
+    featured: true,
+    featuredLabel: "AI/ML",
+    detail: {
+      problem: "Regional launches of foundation models like Sonnet 3.5 and Nova were blocked by non-critical dependency chains, delaying AI access for high-priority Lighthouse customers.",
+      approach: "Decoupled non-essential dependencies from the launch-critical path, identified and mitigated integration risks 2 weeks ahead of schedule, and streamlined the regional go-to-market process.",
+      impact: "Enabled regional launch of Sonnet 3.5 and Nova, accelerating AI access for Lighthouse customers by 15 days.",
+      stack: ["Amazon Bedrock", "Foundation Models", "Regional GTM", "Risk Mitigation", "Stakeholder Alignment"],
+    },
+  },
 ];
 
 export default function ProjectsSection() {
