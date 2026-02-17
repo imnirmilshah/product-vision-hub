@@ -58,7 +58,7 @@ export default function Stage6ContextAssembly() {
       </motion.div>
 
       <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
-        The retrieved chunks are formatted into a structured prompt. Notice the system instruction: "Answer using ONLY the retrieved context" — this is how RAG prevents hallucination.
+        The retrieved chunks are formatted into a structured prompt. Notice the system instruction: "Answer using ONLY the retrieved context." This is how RAG prevents hallucination.
       </p>
     </div>
   );

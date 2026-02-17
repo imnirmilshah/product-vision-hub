@@ -43,7 +43,7 @@ function ReActPattern() {
   return (
     <div className="mb-10">
       <h3 className="font-sans text-lg font-semibold mb-1">ReAct Pattern</h3>
-      <p className="text-xs text-muted-foreground mb-4">Interleaving reasoning with action — each cycle refines the response with new information.</p>
+      <p className="text-xs text-muted-foreground mb-4">Interleaving reasoning with action. Each cycle refines the response with new information.</p>
       <div className="flex flex-wrap items-center gap-2">
         {cycles.map((c, i) => (
           <span key={i} className="flex items-center gap-2">
@@ -77,7 +77,7 @@ function DecisionFramework() {
   return (
     <div className="mb-10">
       <h3 className="font-sans text-lg font-semibold mb-1">Decision Framework</h3>
-      <p className="text-xs text-muted-foreground mb-4">When to use which approach — the PM's cheat sheet.</p>
+      <p className="text-xs text-muted-foreground mb-4">When to use which approach: the PM's cheat sheet.</p>
       <div className="overflow-x-auto">
         <table className="w-full text-xs font-mono">
           <thead>

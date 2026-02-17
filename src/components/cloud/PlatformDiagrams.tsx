@@ -40,7 +40,7 @@ const platforms: Platform[] = [
     accentHsl: "217 89% 61%",
     services: [
       { name: "AlloyDB AI", desc: "Vector search, auto-indexing", tooltip: "PostgreSQL-compatible with built-in vector search and ML-driven index optimization." },
-      { name: "BigQuery ML", desc: "In-database ML", tooltip: "Train and run ML models directly in BigQuery using SQL — no data movement needed." },
+      { name: "BigQuery ML", desc: "In-database ML", tooltip: "Train and run ML models directly in BigQuery using SQL. No data movement needed." },
       { name: "Cloud Spanner", desc: "Auto-sharding", tooltip: "Globally distributed database that automatically shards and rebalances data." },
       { name: "Vertex AI", desc: "AutoML & feature store", tooltip: "End-to-end ML platform with automated model training and managed feature store." },
       { name: "Cloud Run", desc: "Traffic prediction", tooltip: "Serverless compute that predicts traffic patterns for instant cold-start elimination." },

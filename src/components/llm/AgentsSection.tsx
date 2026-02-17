@@ -4,10 +4,10 @@ import { Headphones, Terminal, Search, BarChart3 } from "lucide-react";
 
 /* ─── 3.1 Agent Loop ─── */
 const LOOP_NODES = [
-  { label: "Perception", angle: -90, desc: "The agent receives input — a user query, sensor data, or an event trigger. It parses and understands what's being asked." },
+  { label: "Perception", angle: -90, desc: "The agent receives input: a user query, sensor data, or an event trigger. It parses and understands what's being asked." },
   { label: "Reasoning", angle: -18, desc: "Using the LLM as its 'brain,' the agent analyzes the input, considers context, and determines what information it needs." },
-  { label: "Planning", angle: 54, desc: "The agent breaks the task into steps — which tools to call, in what order, and what to do with results." },
-  { label: "Action", angle: 126, desc: "The agent executes — calling APIs, querying databases, running code, or generating text." },
+  { label: "Planning", angle: 54, desc: "The agent breaks the task into steps: which tools to call, in what order, and what to do with results." },
+  { label: "Action", angle: 126, desc: "The agent executes: calling APIs, querying databases, running code, or generating text." },
   { label: "Memory", angle: 198, desc: "Results are stored in short-term (conversation) and long-term (vector DB) memory for future reference." },
 ];
 
@@ -155,7 +155,7 @@ function RAGCompact() {
         ))}
       </div>
       <p className="text-xs text-muted-foreground mt-3 font-mono">
-        You saw this in detail in Section 2 above — this is the compressed view.
+        You saw this in detail in Section 2 above. This is the compressed view.
       </p>
     </div>
   );

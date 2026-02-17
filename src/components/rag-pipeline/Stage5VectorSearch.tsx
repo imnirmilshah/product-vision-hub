@@ -92,7 +92,7 @@ export default function Stage5VectorSearch() {
       </div>
 
       <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
-        The query vector is compared against every stored vector using cosine similarity. Closest matches are retrieved — not by keyword, but by meaning. This runs in milliseconds using HNSW indexing across millions of vectors.
+        The query vector is compared against every stored vector using cosine similarity. Closest matches are retrieved, not by keyword, but by meaning. This runs in milliseconds using HNSW indexing across millions of vectors.
       </p>
     </div>
   );

@@ -9,7 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const claudeMdContent = `# claude.md — PM Configuration
+const claudeMdContent = `# claude.md: PM Configuration
 
 ## Who I Am
 - Technical Product Manager at AWS
@@ -106,7 +106,7 @@ const comparisonData = [
 
 const setupSteps = [
   "Create an Anthropic account at console.anthropic.com",
-  "Navigate to Claude Projects — create a new project",
+  "Navigate to Claude Projects and create a new project",
   "Set up your project context and instructions",
   "Get your API key for programmatic access",
   "Install Claude for desktop or bookmark claude.ai",
@@ -212,8 +212,8 @@ function StepMeetClaude() {
     <div>
       <h3 className="font-sans text-2xl font-bold mb-4">Meet Claude</h3>
       <p className="font-display text-muted-foreground leading-relaxed mb-8">
-        Claude is Anthropic's AI assistant — and it's become the secret weapon for product managers who want to move fast without cutting corners. 
-        Unlike generic chatbots, Claude excels at long-context analysis, structured output, and nuanced reasoning — exactly what PMs need.
+        Claude is Anthropic's AI assistant, and it's become the secret weapon for product managers who want to move fast without cutting corners. 
+        Unlike generic chatbots, Claude excels at long-context analysis, structured output, and nuanced reasoning: exactly what PMs need.
       </p>
 
       <div className="overflow-x-auto">
@@ -283,7 +283,7 @@ function StepClaudeMd() {
       <h3 className="font-sans text-2xl font-bold mb-2">Understanding claude.md</h3>
       <p className="font-sans text-lg font-semibold text-primary mb-4">The File That Changes Everything</p>
       <p className="font-display text-muted-foreground leading-relaxed mb-6">
-        claude.md is a system prompt file — custom instructions that persist across every conversation in a Claude project.
+        claude.md is a system prompt file, custom instructions that persist across every conversation in a Claude project.
         It tells Claude who you are, what you work on, your preferences, and how to respond. Think of it as Claude's memory about you.
       </p>
 
@@ -323,7 +323,7 @@ function StepComparison() {
     <div>
       <h3 className="font-sans text-2xl font-bold mb-4">claude.md in Action</h3>
       <p className="font-display text-muted-foreground leading-relaxed mb-6">
-        The difference between generic AI output and PM-ready output comes down to context. Here's the same prompt — with and without claude.md:
+        The difference between generic AI output and PM-ready output comes down to context. Here's the same prompt, with and without claude.md:
       </p>
 
       <div className="grid md:grid-cols-2 gap-4">
@@ -384,7 +384,7 @@ function StepPRDs() {
           { title: "Competitive Analysis", content: competitiveAnalysis },
         ].map((tmpl, i) => (
           <div key={i}>
-            <p className="font-sans font-semibold text-sm mb-2">Template {i + 1} — "{tmpl.title}"</p>
+            <p className="font-sans font-semibold text-sm mb-2">Template {i + 1}: "{tmpl.title}"</p>
             <div className="relative bg-secondary rounded-lg border border-border p-5 overflow-x-auto">
               <CopyButton text={tmpl.content} />
               <pre className="font-mono text-xs leading-relaxed text-muted-foreground whitespace-pre-wrap pr-10">

@@ -11,7 +11,7 @@ const projects = [
     featured: true,
     featuredLabel: "AWS",
     detail: {
-      problem: "Pricing page updates for AWS services required a 63-day manual process involving multiple teams, spreadsheets, and email chains — slowing time-to-market for new service launches.",
+      problem: "Pricing page updates for AWS services required a 63-day manual process involving multiple teams, spreadsheets, and email chains, slowing time-to-market for new service launches.",
       approach: "Designed and shipped an automated pricing workflow with built-in review checkpoints, enabling self-service publishing while maintaining compliance and approval gates.",
       impact: "Eliminated 63 days of manual work per pricing update cycle, accelerating service launch timelines and freeing cross-functional teams for higher-leverage work.",
       stack: ["AWS Internal Tools", "Workflow Automation", "Product Strategy", "Stakeholder Alignment"],
@@ -23,7 +23,7 @@ const projects = [
     tags: ["A/B Testing", "UX", "Growth"],
     featured: false,
     detail: {
-      problem: "Conversion funnels across multiple B2C job platforms were underperforming — generic CTAs like 'Submit' created friction and failed to communicate value to 6M+ monthly users.",
+      problem: "Conversion funnels across multiple B2C job platforms were underperforming. Generic CTAs like 'Submit' created friction and failed to communicate value to 6M+ monthly users.",
       approach: "Ran systematic A/B tests across funnels, redesigning CTAs with intent-driven microcopy (e.g., 'Submit' → 'Find Your Home') and optimizing multi-step flows for clarity and urgency.",
       impact: "Achieved a 19% conversion lift across optimized funnels, directly increasing qualified lead volume and downstream revenue.",
       stack: ["A/B Testing", "Google Optimize", "Analytics", "UX Research", "Funnel Design"],
@@ -36,7 +36,7 @@ const projects = [
     featured: true,
     featuredLabel: "AI",
     detail: {
-      problem: "Over 600K documents were scattered across siloed systems with no unified search — vendors, contractors, and internal teams couldn't find what they needed without manual requests.",
+      problem: "Over 600K documents were scattered across siloed systems with no unified search. Vendors, contractors, and internal teams couldn't find what they needed without manual requests.",
       approach: "Built an AI-powered document intelligence platform using LLMs for semantic search, automated categorization, and a self-service portal with role-based access for all stakeholder groups.",
       impact: "Serves 600K+ documents with AI-powered search, reducing document retrieval time by 35% and eliminating manual request workflows for three distinct user groups.",
       stack: ["Amazon Bedrock", "LLM", "Vector Search", "React", "AWS Lambda", "S3"],

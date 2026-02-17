@@ -22,7 +22,7 @@ export default function CloudRevolution() {
   return (
     <>
       <Helmet>
-        <title>The Cloud Revolution — Nirmil</title>
+        <title>The Cloud Revolution | Nirmil</title>
         <meta name="description" content="How cloud infrastructure is shifting from passive to active intelligence. AWS, GCP, and Azure AI-native tools compared." />
       </Helmet>
 
@@ -54,7 +54,7 @@ export default function CloudRevolution() {
         <section className="py-16 md:py-24 bg-secondary/30">
           <div className="container mx-auto px-4">
             <motion.p {...fadeUp} className="text-xs font-sans font-bold tracking-[3px] text-primary uppercase mb-4">PLATFORM DEEP DIVE</motion.p>
-            <motion.h2 {...fadeUp} className="font-sans text-3xl font-bold mb-10">The AI-Native Cloud Stack — AWS vs. GCP vs. Azure</motion.h2>
+            <motion.h2 {...fadeUp} className="font-sans text-3xl font-bold mb-10">The AI-Native Cloud Stack: AWS vs. GCP vs. Azure</motion.h2>
             <PlatformDiagrams />
           </div>
         </section>
@@ -90,7 +90,7 @@ export default function CloudRevolution() {
               className="mt-16 bg-secondary/50 border-l-4 border-primary rounded-r-lg p-6 md:p-8"
             >
               <p className="font-sans text-lg md:text-xl font-semibold leading-relaxed text-foreground">
-                "The best database administrator of the future won't be a person — it will be an AI that never sleeps, continuously learns from every query, and optimizes for outcomes humans haven't even thought to measure yet."
+                "The best database administrator of the future won't be a person. It will be an AI that never sleeps, continuously learns from every query, and optimizes for outcomes humans haven't even thought to measure yet."
               </p>
             </motion.blockquote>
 

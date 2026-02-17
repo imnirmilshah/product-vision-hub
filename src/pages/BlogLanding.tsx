@@ -19,7 +19,7 @@ export default function BlogLanding() {
   return (
     <>
       <Helmet>
-        <title>Blog — Nirmil</title>
+        <title>Blog | Nirmil</title>
         <meta
           name="description"
           content="Thoughts on product management, AI/ML, cloud infrastructure, and building things that matter."
