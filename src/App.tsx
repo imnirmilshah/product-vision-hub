@@ -11,6 +11,7 @@ import BlogLanding from "./pages/BlogLanding";
 import BlogPost from "./pages/BlogPost";
 import AIPMSkills from "./pages/AIPMSkills";
 import LLMFundamentals from "./pages/LLMFundamentals";
+import CloudRevolution from "./pages/CloudRevolution";
 
 const queryClient = new QueryClient();
 
@@ -37,7 +38,7 @@ const App = () => (
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/ai-pm-skills" element={<AIPMSkills />} />
               <Route path="/llm-fundamentals" element={<LLMFundamentals />} />
-              <Route path="/cloud-revolution" element={<PlaceholderPage title="Cloud Revolution" />} />
+              <Route path="/cloud-revolution" element={<CloudRevolution />} />
               <Route path="/contact" element={<PlaceholderPage title="Contact" />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
