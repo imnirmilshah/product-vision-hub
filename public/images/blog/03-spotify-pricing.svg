@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0F"/>
+      <stop offset="100%" style="stop-color:#1A0F1E"/>
+    </linearGradient>
+    <linearGradient id="spotify" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1DB954"/>
+      <stop offset="100%" style="stop-color:#00D4FF"/>
+    </linearGradient>
+    <filter id="softglow3"><feGaussianBlur stdDeviation="20"/></filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg3)"/>
+  
+  <!-- Background orbs -->
+  <circle cx="950" cy="300" r="200" fill="#1DB954" opacity="0.06" filter="url(#softglow3)"/>
+  <circle cx="250" cy="400" r="150" fill="#FF6B35" opacity="0.04" filter="url(#softglow3)"/>
+  
+  <!-- Price chart visualization -->
+  <g transform="translate(700, 120)">
+    <!-- Chart axes -->
+    <line x1="0" y1="300" x2="400" y2="300" stroke="#1E1E2E" stroke-width="1.5"/>
+    <line x1="0" y1="0" x2="0" y2="300" stroke="#1E1E2E" stroke-width="1.5"/>
+    
+    <!-- Y-axis labels -->
+    <text x="-10" y="300" font-family="monospace" font-size="11" fill="#55556A" text-anchor="end">$9.99</text>
+    <text x="-10" y="220" font-family="monospace" font-size="11" fill="#55556A" text-anchor="end">$10.99</text>
+    <text x="-10" y="140" font-family="monospace" font-size="11" fill="#55556A" text-anchor="end">$11.99</text>
+    <text x="-10" y="60" font-family="monospace" font-size="11" fill="#55556A" text-anchor="end">$12.99</text>
+    
+    <!-- Horizontal grid lines -->
+    <line x1="0" y1="220" x2="400" y2="220" stroke="#1E1E2E" stroke-width="0.5" stroke-dasharray="4,4"/>
+    <line x1="0" y1="140" x2="400" y2="140" stroke="#1E1E2E" stroke-width="0.5" stroke-dasharray="4,4"/>
+    <line x1="0" y1="60" x2="400" y2="60" stroke="#1E1E2E" stroke-width="0.5" stroke-dasharray="4,4"/>
+    
+    <!-- Price line - step chart -->
+    <polyline points="0,300 100,300 100,220 200,220 200,140 300,140 300,60 400,60" fill="none" stroke="#1DB954" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Data points -->
+    <circle cx="50" cy="300" r="5" fill="#1DB954"/>
+    <circle cx="150" cy="220" r="5" fill="#1DB954"/>
+    <circle cx="250" cy="140" r="5" fill="#1DB954"/>
+    <circle cx="350" cy="60" r="6" fill="#1DB954"/>
+    
+    <!-- Year labels -->
+    <text x="50" y="325" font-family="monospace" font-size="11" fill="#55556A" text-anchor="middle">2022</text>
+    <text x="150" y="325" font-family="monospace" font-size="11" fill="#55556A" text-anchor="middle">2023</text>
+    <text x="250" y="325" font-family="monospace" font-size="11" fill="#55556A" text-anchor="middle">2024</text>
+    <text x="350" y="325" font-family="monospace" font-size="11" fill="#1DB954" text-anchor="middle" font-weight="700">2025</text>
+    
+    <!-- Churn flat line overlay -->
+    <line x1="0" y1="350" x2="400" y2="350" stroke="#00D4FF" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5"/>
+    <text x="410" y="354" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.7">Churn: 3.9%</text>
+    <text x="410" y="370" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.5">(unchanged)</text>
+  </g>
+  
+  <!-- Category pill -->
+  <g transform="translate(80, 50)">
+    <rect x="0" y="0" width="148" height="28" rx="14" fill="#FF6B35" opacity="0.2"/>
+    <text x="74" y="19" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#FF6B35" text-anchor="middle">Product Management</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="80" y="170" font-family="system-ui, sans-serif" font-size="44" font-weight="800" fill="#E8E8ED" letter-spacing="-1">Why Spotify's Price</text>
+  <text x="80" y="230" font-family="system-ui, sans-serif" font-size="44" font-weight="800" fill="#E8E8ED" letter-spacing="-1">Increase Won't</text>
+  <text x="80" y="290" font-family="system-ui, sans-serif" font-size="44" font-weight="800" fill="url(#spotify)" letter-spacing="-1">Hurt Them</text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="345" font-family="system-ui, sans-serif" font-size="17" fill="#8888A0">3 price hikes. Zero churn impact. Here's why.</text>
+  
+  <!-- Key stats -->
+  <g transform="translate(80, 410)">
+    <rect x="0" y="0" width="130" height="60" rx="12" fill="#12121A" stroke="#1E1E2E" stroke-width="1"/>
+    <text x="65" y="28" font-family="monospace" font-size="22" font-weight="700" fill="#1DB954" text-anchor="middle">$12.99</text>
+    <text x="65" y="48" font-family="system-ui, sans-serif" font-size="11" fill="#55556A" text-anchor="middle">New Price</text>
+  </g>
+  <g transform="translate(230, 410)">
+    <rect x="0" y="0" width="130" height="60" rx="12" fill="#12121A" stroke="#1E1E2E" stroke-width="1"/>
+    <text x="65" y="28" font-family="monospace" font-size="22" font-weight="700" fill="#00D4FF" text-anchor="middle">3.9%</text>
+    <text x="65" y="48" font-family="system-ui, sans-serif" font-size="11" fill="#55556A" text-anchor="middle">Churn (flat)</text>
+  </g>
+  <g transform="translate(380, 410)">
+    <rect x="0" y="0" width="130" height="60" rx="12" fill="#12121A" stroke="#1E1E2E" stroke-width="1"/>
+    <text x="65" y="28" font-family="monospace" font-size="22" font-weight="700" fill="#A855F7" text-anchor="middle">252M</text>
+    <text x="65" y="48" font-family="system-ui, sans-serif" font-size="11" fill="#55556A" text-anchor="middle">Subscribers</text>
+  </g>
+  
+  <!-- Author -->
+  <g transform="translate(80, 540)">
+    <circle cx="18" cy="0" r="18" fill="#1DB954" opacity="0.3"/>
+    <text x="18" y="6" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#1DB954" text-anchor="middle">N</text>
+    <text x="48" y="5" font-family="system-ui, sans-serif" font-size="14" fill="#8888A0">Nirmil · 6 min read</text>
+  </g>
+</svg>
