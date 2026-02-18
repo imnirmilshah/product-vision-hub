@@ -27,9 +27,11 @@ export default function BlogCard({ post }: { post: BlogPost }) {
         className="bg-secondary rounded-2xl border border-border overflow-hidden hover:glow-box-cyan transition-shadow duration-200 h-full flex flex-col"
       >
         <div className="aspect-video overflow-hidden">
-          <div
-            className={`w-full h-full bg-gradient-to-br ${gradient} opacity-80 rounded-t-xl`}
-          />
+          {post.heroImage ? (
+            <img src={post.heroImage} alt={post.title} className="w-full h-full object-cover" loading="lazy" />
+          ) : (
+            <div className={`w-full h-full bg-gradient-to-br ${gradient} opacity-80 rounded-t-xl`} />
+          )}
         </div>
         <div className="p-5 flex flex-col flex-1">
           <Badge variant="outline" className={`w-fit mb-3 text-xs ${colorClass}`}>

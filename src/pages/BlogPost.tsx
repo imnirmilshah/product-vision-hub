@@ -254,7 +254,11 @@ export default function BlogPost() {
             {post.title}
           </h1>
 
-          <div className={`w-full aspect-video rounded-xl mb-8 bg-gradient-to-br ${gradient} opacity-80`} />
+          {post.heroImage ? (
+            <img src={post.heroImage} alt={post.title} className="w-full aspect-video rounded-xl mb-8 object-cover" />
+          ) : (
+            <div className={`w-full aspect-video rounded-xl mb-8 bg-gradient-to-br ${gradient} opacity-80`} />
+          )}
 
           <MarkdownRenderer content={post.body} />
 
