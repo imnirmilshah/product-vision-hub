@@ -129,7 +129,7 @@ Use RAG when you need the model to access specific, frequently updated informati
     publishDate: "2026-01-15",
     readTime: 6,
     featuredGradient: "from-orange to-yellow-400",
-    heroImage: "/images/blog/03-spotify-pricing.svg",
+    heroImage: "/product-vision-hub/images/blog/03-spotify-pricing.svg",
     body: `## The Pricing History: $9.99 → $12.99
 
 Spotify has raised its individual Premium plan price three times since 2023: from $9.99 to $10.99, then to $11.99, and most recently to $12.99. That's a 30% increase in under three years. On paper, this looks like a churn landmine. In practice, Spotify's premium subscriber count has continued to grow every quarter, and their churn rate has remained remarkably stable at around 3.9% monthly. How? Because Spotify understood something most product teams don't: the time to raise prices is *after* you've built the moat, not before.
