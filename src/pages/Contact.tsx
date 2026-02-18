@@ -88,7 +88,7 @@ export default function Contact() {
                 Let's Connect<span className="text-primary">.</span>
               </h1>
               <p className="text-muted-foreground mb-8 max-w-lg">
-                Have a question, opportunity, or just want to chat about AI? Reach out.
+                Have a question, opportunity, or just want to chat about new Product? Reach out.
               </p>
 
               <div className="flex flex-col gap-5">
