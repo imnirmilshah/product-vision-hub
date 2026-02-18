@@ -189,7 +189,8 @@ export default function Contact() {
                 </div>
 
                 <a
-                  href="#"
+                  href="/Nirmil_resume_2026_aws.pdf"
+                  download
                   className="w-full h-11 rounded-xl border border-primary/50 text-primary hover:bg-primary/10 font-medium flex items-center justify-center gap-2 transition-colors"
                 >
                   <Download className="w-4 h-4" />
