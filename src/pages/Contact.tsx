@@ -37,7 +37,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 group"
                   >
-                    <div className="w-9 h-9 rounded-lg bg-tertiary flex items-center justify-center border border-border group-hover:border-primary/50 transition-colors">
+                    <div className="w-9 h-9 rounded-lg bg-muted flex items-center justify-center border border-border group-hover:border-primary/50 transition-colors">
                       <Linkedin className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
                     </div>
                     <div>
