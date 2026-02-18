@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     publishDate: "2026-02-10",
     readTime: 8,
     featuredGradient: "from-purple to-primary",
-    heroImage: "/images/blog/01-claude-ai-pm.svg",
+    heroImage: "/product-vision-hub/images/blog/01-claude-ai-pm.svg",
     body: `## The Problem with Traditional PM Workflows
 
 Product management has always been a discipline of context-switching. On any given day, you're writing PRDs in the morning, synthesizing customer research by lunch, drafting stakeholder emails in the afternoon, and reviewing competitive intel before EOD. Each task demands deep focus, but the sheer volume means you're constantly operating at 60% depth. I spent two years in this cycle at AWS before realizing there had to be a better way: not to replace the thinking, but to accelerate the scaffolding around it.
@@ -82,7 +82,7 @@ Since adopting this workflow, I've cut document creation time by roughly 65%, in
     publishDate: "2026-01-28",
     readTime: 12,
     featuredGradient: "from-purple to-primary",
-    heroImage: "/images/blog/02-rag-pipeline.svg",
+    heroImage: "/product-vision-hub/images/blog/02-rag-pipeline.svg",
     body: `## What Is RAG and Why It Matters
 
 Retrieval-Augmented Generation (RAG) is the most important architecture pattern in applied AI today. At its core, RAG solves a fundamental problem: large language models are incredibly capable reasoners, but they only know what they were trained on. RAG gives them access to external knowledge (your company's docs, your product data, the latest research) at inference time, without retraining. Every enterprise AI product you've seen in the last two years, from Amazon Bedrock's Knowledge Bases to ChatGPT plugins to Notion AI, is running some version of this pattern.
@@ -162,7 +162,7 @@ The lesson for product managers is architectural: pricing power is earned, not a
     publishDate: "2025-12-20",
     readTime: 7,
     featuredGradient: "from-pink-500 to-orange",
-    heroImage: "/images/blog/04-career-pivot.svg",
+    heroImage: "/product-vision-hub/images/blog/04-career-pivot.svg",
     body: `## Why I Made the Switch
 
 I spent four years as a data engineer: building ETL pipelines, designing data warehouses, writing Spark jobs that processed billions of rows. I was good at it, and I liked it. But I kept finding myself more interested in *why* we were building things than *how*. In sprint planning, I'd ask about customer impact metrics. In design reviews, I'd question whether we were solving the right problem. I was, without realizing it, already thinking like a PM. The actual transition was less of a leap and more of a formalization of where my curiosity had already taken me.
@@ -201,7 +201,7 @@ If you're an engineer thinking about PM, here's my honest advice: don't rush it.
     publishDate: "2025-12-05",
     readTime: 10,
     featuredGradient: "from-blue-500 to-green",
-    heroImage: "/images/blog/05-cloud-active.svg",
+    heroImage: "/product-vision-hub/images/blog/05-cloud-active.svg",
     body: `## The Old Model: User-Driven, Reactive Infrastructure
 
 For the past 15 years, cloud computing has operated on a fundamentally passive model. You tell AWS to spin up an EC2 instance, and it spins up an EC2 instance. You configure auto-scaling rules, and it follows those rules. You set up CloudWatch alarms, and it fires when thresholds are breached. The cloud does exactly what you tell it to do, no more, no less. This model has been incredibly successful, powering everything from startups to Fortune 500 companies. But it has a fundamental limitation: it requires humans to anticipate every scenario, configure every response, and monitor every metric. The cloud is smart infrastructure operated by human decision-making.
@@ -242,7 +242,7 @@ Extrapolating current trends, I believe we'll see fully autonomous cloud operati
     publishDate: "2025-11-18",
     readTime: 9,
     featuredGradient: "from-purple to-primary",
-    heroImage: "/images/blog/06-ai-agents.svg",
+    heroImage: "/product-vision-hub/images/blog/06-ai-agents.svg",
     body: `## What Is an AI Agent?
 
 An AI agent is fundamentally different from the AI tools most people are familiar with. While a chatbot takes your input and returns output in a single turn, an agent operates in a continuous loop: **Perception → Reasoning → Planning → Action → Memory → Repeat**. It observes its environment, reasons about what it sees, makes a plan to achieve its goal, takes action (often using external tools), stores what it learned, and then loops back. The key distinction is *autonomy*: an agent can pursue multi-step goals without human intervention at each step. Think of the difference between asking someone a question (chatbot) and delegating a task (agent).
