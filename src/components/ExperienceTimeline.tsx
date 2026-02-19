@@ -21,9 +21,9 @@ const experiences = [
     location: "Royal Oak, MI",
     current: false,
     bullets: [
-      "Designed scalable data products integrating Snowflake, Kafka, and BigQuery for real-time B2B ad decisioning",
-      "Delivered AI-enhanced attribution using GenAI models (LLaMA, Phi), increasing cross-channel precision by 19%",
-      "Reduced reporting ops costs by $100K through real-time dashboards and automated pipelines",
+      "Partnered with business stakeholders across education, retail, gig, and transportation verticals to identify critical gaps in advertiser measurement capability; defined product requirements and roadmap for a compliant data onboarding platform and API layer across Snowflake, Kafka, AWS, and BigQuery. Enabled real-time ingestion and curation of advertiser signals at scale supporting 6M+ unique customer profiles with 1-3M new applicants processed monthly",
+      "Owned roadmap for a B2C Ads Measurement & Reporting platform serving 6M+ customers; drove conversion optimization through A/B testing on application flows, UX microcopy, and CTA positioning lifting lead conversion by 19% and achieving 23% conversion lift through experimentation. Defined metrics frameworks and dashboards that became the single source of truth for advertiser performance measurement",
+      "Defined personalization strategy connecting MarTech (Braze, Zapier) and call center (Five9) via CDC pipeline into a unified CDP, replacing generic campaigns with real-time personalized outreach improving CTR by 17%, reporting efficiency by 37%, and reducing operational overhead by $100K annually",
     ],
   },
   {
@@ -39,13 +39,13 @@ const experiences = [
   },
   {
     company: "ACMEUNIVERSE i-TECH",
-    role: "Product Manager / Data Engineer",
+    role: "Product Manager",
     period: "Jun 2016 – Jul 2018",
     location: "Ahmedabad, India",
     current: false,
     bullets: [
-      "Led team of data analysts delivering market insights that increased revenue by 17%",
-      "Built data pipelines using Python, PySpark, Hadoop; conducted NLP extraction with TF-IDF vectorization",
+      "Led a team of 3 data analysts to deliver B2B enterprise client projects; conducted multi-dimensional analysis across internal source systems to surface market trends, customer buying patterns, and cross-product associations driving a 17% revenue increase for enterprise clients",
+      "Applied NLP (TF-IDF vectorization) and statistical A/B testing to optimize product lifecycle decisions; built actionable data visualizations translating complex datasets into client-facing insights, reducing project lifecycle by 10% and maintenance costs by 5%",
     ],
   },
 ];
