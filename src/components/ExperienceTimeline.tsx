@@ -8,10 +8,10 @@ const experiences = [
     location: "Herndon, VA",
     current: true,
     bullets: [
-      "Led cross-functional infrastructure delivery for enterprise customers, launching workloads 20 days ahead of schedule with 40% cost savings",
-      "Optimized Bedrock AI go-to-market, accelerating regional launch of Sonnet 3.5 and Nova for Lighthouse customers by 15 days",
-      "Architected automated Cloud Billing governance framework, accelerating high-revenue service launches by 33%",
-      "Pioneered AI document intelligence platform using LLMs, improving search precision by 35%",
+      "Owned end to end launch readiness for the regional Bedrock GTM. Accelerated Sonnet 3.5 and Nova availability by 15 days, unblocking Lighthouse customers preventing potential customer churn",
+      "Expanded internal tooling into an AI document intelligence product (Claude Sonnet 3.5) by defining requirements and building an automated metadata pipeline improving search precision by 35% and self-service document access by 19%",
+      "Conducted discovery with 70+ enterprise customers to identify global service availability and feature parity as critical unmet needs.Validated product-market fit with 500K+ monthly page visits and 35K+ report downloads; roadmapping a 'Notify Me' CTA to build a demand funnel and data-driven regional rollout prioritization framework.",
+      "Instrumented SQL performance telemetry to surface that enterprise customers lacked automated storage tuning, creating cascading impacts on pricing predictability and workload performance; used observed latency and error rate signals to define requirements and partner with data science to build an ML-based adaptive tuning engine. Reduced transaction latency by 13%, improved data durability to 99.999%, and eliminated manual tuning overhead for enterprise-scale workloads",
     ],
   },
   {
