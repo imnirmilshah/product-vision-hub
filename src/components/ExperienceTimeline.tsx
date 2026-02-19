@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const experiences = [
   {
     company: "Amazon Web Services",
-    role: "Technical Product Manager",
+    role: "Sr Technical Product Manager",
     period: "July 2024 – Present",
     location: "Herndon, VA",
     current: true,
