@@ -23,7 +23,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <a href="/Nirmil_resume_2026_aws.pdf" download>
+          <a href="/product-vision-hub/Nirmil_resume_2026_aws.pdf" download>
             <Button variant="outline" size="sm" className="gap-2 border-primary/50 text-primary hover:bg-primary/10">
               <Download className="w-3 h-3" />
               Download Resume
