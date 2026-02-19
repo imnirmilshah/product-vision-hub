@@ -53,7 +53,7 @@ export default function Contact() {
                 </div>
 
                 <a
-                  href="/Nirmil_resume_2026_aws.pdf"
+                  href="/product-vision-hub/Nirmil_resume_2026_aws.pdf"
                   download
                   className="w-full h-11 rounded-xl border border-primary/50 text-primary hover:bg-primary/10 font-medium flex items-center justify-center gap-2 transition-colors"
                 >
