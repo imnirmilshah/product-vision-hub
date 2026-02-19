@@ -16,7 +16,7 @@ const experiences = [
   },
   {
     company: "Career Now Brands",
-    role: "Data Product Manager",
+    role: "Product Manager",
     period: "Oct 2021 – July 2024",
     location: "Royal Oak, MI",
     current: false,
@@ -39,7 +39,7 @@ const experiences = [
   },
   {
     company: "ACMEUNIVERSE i-TECH",
-    role: "Product Manager",
+    role: "Product Manager, Data Engineer",
     period: "Jun 2016 – Jul 2018",
     location: "Ahmedabad, India",
     current: false,
