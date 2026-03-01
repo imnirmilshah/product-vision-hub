@@ -271,6 +271,45 @@ Amazon Bedrock's multi-agent collaboration feature implements these patterns at 
 
 If you're a PM planning your 2026-2027 roadmap, here's what matters. First, **identify agent-shaped problems** in your product: tasks that are multi-step, require tool use, and currently require human orchestration. Customer support, code review, research synthesis, and workflow automation are prime candidates. Second, **design for human-in-the-loop**: the best agent architectures include checkpoints where humans can review, redirect, or approve before the agent continues. Third, **think about failure modes**: agents can get stuck in loops, use wrong tools, or pursue suboptimal plans. Your product needs graceful degradation and clear escalation paths. Finally, **measure agent quality differently**: task completion rate, average steps to completion, tool use accuracy, and human escalation rate are the metrics that matter, not just response quality.`,
   },
+  {
+    id: "7",
+    slug: "ai-agents_structured-data",
+    title: "AI agent interaction with Strcutured Data: Why its different",
+    excerpt:
+      "AI agents are the next frontier: autonomous systems that reason, plan, and act. Here's the architecture every PM should understand before their next roadmap planning.",
+    category: "AI/ML",
+    publishDate: "2025-11-18",
+    readTime: 9,
+    featuredGradient: "from-purple to-primary",
+    heroImage: "/product-vision-hub/images/blog/06-ai-agents.svg",
+    body: `## What Is an AI Agent?
+
+An AI agent is fundamentally different from the AI tools most people are familiar with. While a chatbot takes your input and returns output in a single turn, an agent operates in a continuous loop: **Perception → Reasoning → Planning → Action → Memory → Repeat**. It observes its environment, reasons about what it sees, makes a plan to achieve its goal, takes action (often using external tools), stores what it learned, and then loops back. The key distinction is *autonomy*: an agent can pursue multi-step goals without human intervention at each step. Think of the difference between asking someone a question (chatbot) and delegating a task (agent).
+
+## Tool Use and Function Calling
+
+The breakthrough that enabled modern AI agents is **tool use** (also called function calling). Instead of being limited to generating text, agents can invoke external tools (APIs, databases, code interpreters, web browsers, calculators) to interact with the real world. When an agent needs to check a customer's order status, it doesn't hallucinate an answer; it calls your order management API and returns real data.
+
+The architecture typically works like this: the LLM receives a goal and a list of available tools with their descriptions. It reasons about which tool to use, generates a structured tool call (JSON with function name and parameters), the system executes the tool call and returns results, and the LLM incorporates the results into its next reasoning step. This loop continues until the goal is achieved or the agent determines it needs human input.
+
+## RAG as the Knowledge Layer
+
+If tool use gives agents *hands*, RAG gives them *memory and knowledge*. Most production agents combine real-time tool use with RAG-based knowledge retrieval. When a customer support agent receives a question about your refund policy, it doesn't need to call an API. It retrieves the relevant policy documents from a vector store and reasons over them. The combination of RAG (for knowledge) and tool use (for action) creates agents that can both *know* things and *do* things.
+
+## Multi-Agent Orchestration Patterns
+
+The most powerful agent architectures don't use a single agent. They orchestrate multiple specialized agents. Common patterns include:
+
+- **Supervisor pattern**: A "manager" agent breaks down complex tasks and delegates to specialist agents (research agent, writing agent, code agent), then synthesizes their outputs.
+- **Debate pattern**: Multiple agents analyze the same problem from different perspectives, then a judge agent synthesizes the best answer.
+- **Pipeline pattern**: Agents are chained sequentially. Agent A's output becomes Agent B's input, like an assembly line for cognitive tasks.
+
+Amazon Bedrock's multi-agent collaboration feature implements these patterns at scale, allowing you to define agent teams with specific roles and communication protocols.
+
+## What PMs Should Be Thinking About
+
+If you're a PM planning your 2026-2027 roadmap, here's what matters. First, **identify agent-shaped problems** in your product: tasks that are multi-step, require tool use, and currently require human orchestration. Customer support, code review, research synthesis, and workflow automation are prime candidates. Second, **design for human-in-the-loop**: the best agent architectures include checkpoints where humans can review, redirect, or approve before the agent continues. Third, **think about failure modes**: agents can get stuck in loops, use wrong tools, or pursue suboptimal plans. Your product needs graceful degradation and clear escalation paths. Finally, **measure agent quality differently**: task completion rate, average steps to completion, tool use accuracy, and human escalation rate are the metrics that matter, not just response quality.`,
+  },
 ];
 
 export function getAllPosts(): BlogPost[] {
